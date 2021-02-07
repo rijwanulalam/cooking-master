@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Master</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid px-5">
+              <a class="navbar-brand" href="#">Cooking Master</a>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#">Recipes</a>
+                  <a class="nav-link" href="#">Blog</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!-- Search and Warning -->
+        <div class="container">
+            <div class="col-10  col-md-8 col-lg-7 col-xl-6 m-auto pt-1 pb-2">
+                <div class="input-group mb-3">
+                    <input id="input-meal-name" type="text" class="form-control" placeholder="Search for MEAL...">
+                    <div class="input-group-append">
+                        <button id="search-btn" type="button" class="btn btn-danger">Search</button>
+                    </div>
+                </div>
+    
+                <!-- Warning Text: If no meal found or Empty Search Box -->
+                <div style="height: 30px;margin-bottom: 10px;">
+                    <p id="warning-text"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <!-- Display: Single meal Details. Default:Hidden -->
+        <div id="meal-details" class="container">
+            <div id="meal-details-display" class="row row-cols-1  row-cols-md-2 g-1">
+                <!-- Dynamically -->
+            </div>
+            <div id="instruction-display">
+                <!-- Dynamically -->
+            </div>
+        </div>
+    
+        <!-- Display: Search result -->
+        <div class="meal-container mb-5">
+            <div id="meal-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                <!-- Dynamically -->
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
